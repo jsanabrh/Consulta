@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Qué son las VIEWS en MYSQL?</h1>
+    <p>
+        Una vista en MySQL es una opción que te permite observar los datos de una
+        serie de tablas. La vista parece una tabla virtual que almacena todas las
+        consultas que se realizan sobre las bases de datos. Es por eso que los
+        datos o consultas que se establecen dentro de las vistas no están
+        almacenados como un objeto dentro de las tablas de la base de datos. De
+        esta manera, cuando haces una consulta sobre una vista, te ejecutará la
+        query que has escrito y te guardará la consulta que vas a realizar en
+        lugar de los valores, como cualquier otra de las tablas.
+    </p>
+    <h3>ventajas y desventajas de las vistas</h3>
+    <h3>Ventajas</h3>
+    <ul>
+        <li>Facilita el manejo de grandes volúmenes de información, haciéndolos mas fáciles y rápidos de manipular.</li>
+        <li>Brinda mayor seguridad a la información.</li>
+        <li>Evita la redundancia de la información.</li>
+        <li>Mejora la metodología de trabajo, se hace mas organizada.</li>
+        <li>Facilita la realización de consultas en la BD por lo que se facilita la toma de decisiones.</li>
+    </ul>
+    <h3>Desventajas</h3>
+    <ul>
+        <li>Rendimiento ya que las vistas crean una apariencia de tabla por lo que el SMBD debe traducir las consultas definidas en una vista.</li>
+        <li>restricciones de actualización, cuando se solicita la actualización de una fila de la vista se debe traducir en una petición de actualización a la tabla de origen de la vista, esto en vistas muy grandes puede causar problemas y evitar que las actualizaciones se realicen.</li>
+    </ul>
+    <h1>Que son los procedimientos almacenados?</h1>
+    <p>
+        Un procedimiento almacenado es una subrutina almacenada en el catálogo de
+        la base de datos. Las aplicaciones pueden llamar y ejecutar el
+        procedimiento almacenado. La sentencia de SQL CALL se usa para ejecutar un
+        procedimiento almacenado.
+    </p>
+    <h3>Parametros de un procedimiento almacenado</h3>
+    <p>
+        Los procedimientos almacenados pueden tener parámetros IN, INOUT y OUT,
+        dependiendo de la versión de MySQL. La interfaz mysqli no tiene una noción
+        especial de los diferentes tipos de parámetros.
+    </p>
+
+    <h3>Diferencia entre SQL y NoSQL</h3>
+    <ul>
+        <li>Rendimiento. Las bases de datos NoSQL ofrecen un mayor rendimiento que las SQL (necesitan menos recursos de hardware). </li>
+        <li>Fiabilidad. Las bases de datos relacionales SQL son más fiables que las NoSQL (si un proceso tiene algún error, no se lleva a cabo). </li>
+        <li>Disponibilidad. En cuanto a la disponibilidad, ambas alternativas son igual de válidas. 
+        </li>
+        <li>Consistencia. La consistencia de las bases de datos NoSQL es pobre, en cambio las SQL son bases de datos muy consistentes (la consistencia es la capacidad de garantizar la integridad de los datos). 
+        </li>
+        <li>Almacenamiento. Las bases de datos SQL son indicadas cuando la cantidad de datos no son extremadamente grandes, mientras que las NoSQl son ideales para manejar grandes volúmenes de datos. 
+        </li>
+        <li>Escalabilidad. Las bases de datos NoSQL son escalables por lo que se pueden aumentar su capacidad fácilmente, sin embargo, las SQL pueden ser escalables, pero con un costo económico más elevado. Las bases de datos No SQL utilizan un escalado horizontal (aumentar el número de servidores) mientras que las SQL utilizan un escalado vertical (aumentar los recursos de un servidor). 
+        </li>
+    </ul>
+    <h3>Que es MongoDB</h3>
+    <p>es un sistema de base de datos NoSQL orientado a documentos de código abierto y escrito en C++, que en lugar de guardar los datos en tablas lo hace en estructuras de datos BSON (similar a JSON) con un esquema dinámico. Al ser un proyecto de código abierto, sus binarios están disponibles para los sistemas operativos Windows, GNU/Linux, OS X y Solaris y es usado en múltiples proyectos o implementaciones en empresas como MTV Network, Craigslist, BCI o Foursquare.</p>
+</body>
+</html>
